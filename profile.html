@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto p-6">
+            <h1 class="text-3xl font-bold text-gray-800">User Profile</h1>
+        </div>
+    </header>
+    <main class="container mx-auto p-6">
+        <section id="userInfo" class="bg-white p-6 rounded shadow-md mb-8">
+            <h2 class="text-2xl font-bold text-gray-700">User Information</h2>
+            <p class="text-gray-600" id="userName">Username: </p>
+            <p class="text-gray-600" id="userEmail">Email: </p>
+        </section>
+        <section>
+            <h2 class="text-2xl font-bold text-gray-700">Add Property</h2>
+            <form id="propertyForm" class="bg-white p-6 rounded shadow-md">
+                <div class="mb-4">
+                    <label for="description" class="block text-gray-700">Description</label>
+                    <textarea id="description" class="mt-2 p-2 border rounded w-full" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="price" class="block text-gray-700">Price</label>
+                    <input type="number" id="price" class="mt-2 p-2 border rounded w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="image" class="block text-gray-700">Image URL</label>
+                    <input type="url" id="image" class="mt-2 p-2 border rounded w-full" required>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add Property</button>
+            </form>
+        </section>
+    </main>
+    <script src="profile.js"></script>
+</body>
+</html>
